@@ -9,11 +9,13 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "lucide-react": "^0.508.0",
     "next": "15.3.2",
+    "next-sitemap": "^4.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
