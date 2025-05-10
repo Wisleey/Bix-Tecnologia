@@ -24,8 +24,8 @@ Um dashboard moderno e intuitivo para gerenciamento financeiro, desenvolvido com
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/seu-usuario/dashboard-financeiro.git
-cd dashboard-financeiro
+git clone https://github.com/Wisleey/Bix-Tecnologia.git
+cd Bix-Tecnologia
 ```
 
 2. **Instale as dependências**

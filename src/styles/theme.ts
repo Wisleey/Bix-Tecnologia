@@ -1,0 +1,30 @@
+// src/styles/theme.ts
+export const theme = {
+  colors: {
+    primary: "#023F23",
+    primaryDark: "#096F00",
+    primaryLight: "#EEF2FF",
+    success: "#10B981",
+    error: "#EF4444",
+    warning: "#F59E0B",
+    text: "#1E293B",
+    textLight: "#64748B",
+    background: "#F8FAFC",
+    card: "#FFFFFF",
+    sidebar: "#FFFFFF",
+    border: "#CBD5E1",
+    borderLight: "#E2E8F0",
+    hover: "#F1F5F9",
+    disabled: "#CBD5E1",
+    inputBg: "#F8FAFC",
+    gradientStart: "#6366F1",
+    gradientEnd: "#8B5CF6",
+    verdeText: "#096F00",
+  },
+  breakpoints: {
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+  },
+};
