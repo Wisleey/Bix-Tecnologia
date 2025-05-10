@@ -38,7 +38,7 @@ export default function DashboardPage() {
           content="Gerencie suas finanças com dashboards, relatórios e insights inteligentes."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/bix-tecnologia.png" />
+        <meta property="og:image" content="/bix-tecnologia.webp" />
         <meta
           property="og:url"
           content="https://bix-tecnologia-tau.vercel.app/dashboard"

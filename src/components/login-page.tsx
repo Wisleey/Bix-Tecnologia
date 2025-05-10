@@ -57,7 +57,7 @@ const LoginContainer = styled.div`
 
 const BackgroundContainer = styled.div`
   flex: 1;
-  background: url("/executivo-bg1.png") no-repeat center left;
+  background: url("/executivo-bg1.webp") no-repeat center left;
   background-size: cover;
   display: flex;
   justify-content: flex-end;

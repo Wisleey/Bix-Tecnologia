@@ -6,7 +6,7 @@ import Sidebar from "@/components/sidebar";
 import DashboardHeader from "@/components/dashboard/dashboard-header";
 import SummaryCards from "@/components/dashboard/summary-cards";
 import FilterPanel from "@/components/dashboard/filter-painel";
-import ChartSection from "@/components/dashboard/chart-section";
+import dynamic from "next/dynamic";
 import { useFilter } from "@/contexts/filter-context";
 import type { Transaction } from "@/types";
 import transactionsData from "@/data/transactions.json";
@@ -42,6 +42,11 @@ type RawTransaction = {
   industry: string;
   state: string;
 };
+
+const ChartSection = dynamic(
+  () => import("@/components/dashboard/chart-section"),
+  { ssr: false }
+);
 
 export default function Dashboard() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);

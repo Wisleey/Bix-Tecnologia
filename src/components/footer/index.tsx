@@ -80,7 +80,7 @@ const Footer = () => {
     <FooterContainer>
       <LogoWrapper>
         <Image
-          src="/bix-tecnologia.png"
+          src="/bix-tecnologia.webp"
           alt="BIX Tecnologia"
           width={180}
           height={40}
