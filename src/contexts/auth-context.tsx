@@ -35,7 +35,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setUser(parsedUser);
         setIsAuthenticated(true);
       } catch (error) {
-        console.error("Falha ao analisar usuário armazenado:", error);
         localStorage.removeItem("user");
       }
     }

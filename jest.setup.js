@@ -24,3 +24,35 @@ jest.mock("styled-components", () => {
   });
   return { __esModule: true, default: styled, ...styled };
 });
+
+// Mock do localStorage
+const localStorageMock = {
+  getItem: jest.fn(),
+  setItem: jest.fn(),
+  removeItem: jest.fn(),
+  clear: jest.fn(),
+};
+Object.defineProperty(window, "localStorage", { value: localStorageMock });
+
+// Mock do fetch
+global.fetch = jest.fn();
+
+// Mock do Headers
+global.Headers = class Headers {
+  constructor(init) {
+    this.headers = new Map();
+    if (init) {
+      Object.entries(init).forEach(([key, value]) => {
+        this.headers.set(key, value);
+      });
+    }
+  }
+
+  get(name) {
+    return this.headers.get(name);
+  }
+
+  set(name, value) {
+    this.headers.set(name, value);
+  }
+};
